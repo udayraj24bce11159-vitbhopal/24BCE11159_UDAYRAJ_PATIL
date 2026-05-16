@@ -1,0 +1,56 @@
+SHOW DATABASES;
+
+CREATE DATABASE VITCampus1;
+
+DROP DATABASE VITCampus1;
+
+CREATE DATABASE vitcampus;
+
+USE vitcampus;
+
+CREATE TABLE CSE (
+    sid BIGINT,
+    sname VARCHAR(50),
+    smarks INT
+);
+
+CREATE TABLE EEE (
+    sid BIGINT,
+    sname VARCHAR(50),
+    smarks INT
+);
+
+CREATE TABLE DBMS (
+    sid BIGINT,
+    sname VARCHAR(50),
+    smarks INT
+);
+
+SHOW TABLES FROM vitcampus;
+
+INSERT INTO CSE VALUES
+(101, 'Kiran', 99),
+(102, 'Rahul', 88),
+(103, 'Priya', 91),
+(104, 'Aman', 85),
+(105, 'Sneha', 95);
+
+INSERT INTO EEE VALUES
+(201, 'Rohit', 78),
+(202, 'Neha', 84),
+(203, 'Vikas', 89),
+(204, 'Pooja', 92),
+(205, 'Arjun', 81);
+
+INSERT INTO DBMS VALUES
+(301, 'Ankit', 87),
+(302, 'Meera', 93),
+(303, 'Suresh', 76),
+(304, 'Kavya', 90),
+(305, 'Nitin', 82);
+
+SELECT * FROM CSE;
+SELECT * FROM EEE;
+SELECT * FROM DBMS;
+
+INSERT INTO CSE VALUES (109, 'Kiran', 99);
